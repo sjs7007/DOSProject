@@ -27,7 +27,7 @@ class ComplexThree(real: Double, imaginary: Double)
 {
   def re = real
   def im = imaginary
-  override def toString() = 
+  override def toString() = //method overriding. it has to be defined explicitly to avoid accidental oerriding. 
     "" + re + (if (im < 0) "" else "+") + im + "i"
 }
 object ComplexClass {
