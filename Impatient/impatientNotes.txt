@@ -1,14 +1,16 @@
-+ Value declared with val is constant. var is for variable.
+### Chapter 1 : The Basics.
 
-+ Semicolons are required only if you have multiple statements on the same line. 
+- Value declared with val is constant. var is for variable.
 
-+ Everything is an object in scala. Even numbers like 1,2,3.14.
+- Semicolons are required only if you have multiple statements on the same line. 
 
-+ There is no ++ or -- in scala. Instead use +=1 or -=1.
+- Everything is an object in scala. Even numbers like 1,2,3.14.
 
-+ The usual mathematical operators can be used with BigInt and BigDecimal objects since the operators themselves represent function calls anyway. So you can directly do x * x instead of x.multiply(x)
+- There is no ++ or -- in scala. Instead use +=1 or -=1.
 
-+ Math functions such as pow(), min() in scala.math
+- The usual mathematical operators can be used with BigInt and BigDecimal objects since the operators themselves represent function calls anyway. So you can directly do x * x instead of x.multiply(x)
+
+- Math functions such as pow(), min() in scala.math
 
  Can be used as sqrt(2),pow(2,4) etc.
 
@@ -16,11 +18,11 @@ The prefix scala. can be omitted.
 
 import scala.math._ == import math._
 
-+ Scala has singleton objects instead of static methods.  
+- Scala has singleton objects instead of static methods.  
 
-+ Look into RichInt,RichDouble and StringOps in Scala docs.
+- Look into RichInt,RichDouble and StringOps in Scala docs.
 
-+ Method tagged as implicit is an automatic conversion. Example the BigInt object has automatic conversions from int and long to BigInt.
+- Method tagged as implicit is an automatic conversion. Example the BigInt object has automatic conversions from int and long to BigInt.
 
 e.g 
 
@@ -36,3 +38,7 @@ res15: scala.math.BigInt = 9
 Chapter 1 ends here. Solutions : https://gist.github.com/parambirs/9932268.
 
 ----
+
+### Chapter 2 : Control Structures and Functions.
+
+
