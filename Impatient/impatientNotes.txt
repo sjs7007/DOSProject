@@ -1,0 +1,36 @@
++ Value declared with val is constant. var is for variable.
+
++ Semicolons are required only if you have multiple statements on the same line. 
+
++ Everything is an object in scala. Even numbers like 1,2,3.14.
+
++ There is no ++ or -- in scala. Instead use +=1 or -=1.
+
++ The usual mathematical operators can be used with BigInt and BigDecimal objects since the operators themselves represent function calls anyway. So you can directly do x * x instead of x.multiply(x)
+
++ Math functions such as pow(), min() in scala.math
+
+ Can be used as sqrt(2),pow(2,4) etc.
+
+The prefix scala. can be omitted.
+
+import scala.math._ == import math._
+
++ Scala has singleton objects instead of static methods.  
+
++ Look into RichInt,RichDouble and StringOps in Scala docs.
+
++ Method tagged as implicit is an automatic conversion. Example the BigInt object has automatic conversions from int and long to BigInt.
+
+e.g 
+
+scala> var x=4
+x: Int = 4
+
+scala> var y:BigInt = 5
+y: scala.math.BigInt = 5
+
+scala> x+y
+res15: scala.math.BigInt = 9
+
+
