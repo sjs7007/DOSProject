@@ -33,4 +33,6 @@ y: scala.math.BigInt = 5
 scala> x+y
 res15: scala.math.BigInt = 9
 
+Chapter 1 ends here. Solutions : https://gist.github.com/parambirs/9932268.
 
+----
