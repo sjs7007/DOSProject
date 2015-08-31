@@ -122,4 +122,23 @@ Book methods :
         This method works by throwing and catching an exception. Should be ideally avoided. 
 
 
+#### Advanced for Loops and Comprehensions
+
+for(i <- 1 to 3 ; j <- 1 to 3) println(i+" "+j)
+
+Output : 11
+         12 
+         .
+         .
+         33
+
++ Each <- thing is called a generator and it can have a guard. A guard is a boolean condition preceded by if. 
+
+Example if, if i!=j is added at end of j <-1 to 3 output will have all combos except where i=j.
+
++ When the body of the for loop starts with yield, then the loop constructs a collection of values, one for each iteration. 
+
+#### Functions
+
++ Functions are different from methods. Scala supports both. Method operates on object but function doesnt. 
 
