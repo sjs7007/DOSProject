@@ -41,4 +41,85 @@ Chapter 1 ends here. Solutions : https://gist.github.com/parambirs/9932268.
 
 ### Chapter 2 : Control Structures and Functions.
 
++ Semicolons are optional.
++ void type is Unit.
++ Avoid using return in a function... why?
+
+If Else
++ Syntax is same as Java. Except if/else has a value = the expression value which follows if or else.
+
+Example : if(x>0) 1 else -1 will have value 1 or -1 depending on if x>0 or not.
+
++ Type of a mixed type expression is common supertype of both branches. 
+
+Example : if (x>0) "pos" else -1 will have type expression which is common supertype of Int and java.lang.String which is Any.
+
+Look up any..
+
++ Use :paste mode to type out/copy a bunch of code in REPL without it getting evaluated directly.
++ Use semicolons to have more than 1 stmt in a single line. 
++ The vale of a block containing multiple expressions is the value of the last expression in the block.
++ Assignments have no value or "Unit" type in scala.
++ Print Options : print or println or printf(c style).
++ Input Options : readLine,readInt,readDouble,readByte etc
+
+```
+scala> var x = readInt()
+warning: there was one deprecation warning; re-run with -deprecation for details
+x: Int = 567
+```
+
+Note that this doesnt seem to echo the user input. Look for how to echo user input....
++ Power mode doesnt solve this problem. 
+
++ Loop Options : while and do. Same as Java.
+
+Example : 
+
+var x = 5
+var y = while(x>1)
+{
+    x=x*x-1
+}
+
+This above code will not return factorial in y, because as mentioned earlier assignments have Unit type in Scala. Also, that is wrong code for factorial.
+
+scala> while(x>1){
+     | y=y*x
+     | x=x-1
+     | }
+     
+scala> y
+res2: Int = 120
+
++ For Loop 
+
+Example : 
+
+for(i <- 1 to 5)
+{
+    print(i)
+}
+
+Output : 12345
+
++ to is a method from the RichInt class which returns a range of numbers from 1 to n(inclusive).
++ To get range from 0 to n-1 use until instead of to. 
+
+Output if until was used instead of to in above example : 1234
+
++ BREAK/CONTINUE : Scala has no such statements to break out of a loop.
+How to break then : http://stackoverflow.com/questions/2742719/how-do-i-break-out-of-a-loop-in-scala
+
+Tail recursion in Scala? :  http://oldfashionedsoftware.com/2008/09/27/tail-recursion-basics-in-scala/
+
+Book methods : 
+
+    + Use a Boolean control variable instead.... What does this mean? [look-up-later]
+    + Use nested functions. You can return from middle of a function. 
+        i.e. put the loop inside a method and use return when you want to break out.
+    + Use the break method in the Breaks object... 
+        This method works by throwing and catching an exception. Should be ideally avoided. 
+
+
 
