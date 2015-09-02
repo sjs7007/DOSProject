@@ -141,4 +141,22 @@ Example if, if i!=j is added at end of j <-1 to 3 output will have all combos ex
 #### Functions
 
 + Functions are different from methods. Scala supports both. Method operates on object but function doesnt. 
++ To define a function, you specify the functions name,parameters, and body like this :
 
+def abs(x:Double) = if (x>=0)x else -x
+
++ You must specify the types of all parameters. Return type needed only if function is recursive. 
++ The last expression in the function is the return value. 
++ If the function has more than one statements, use a block. 
+
+Example : 
+
+```
+def fac(n:Int) = {
+    var r=1
+    for(i<-1 to n)
+    {
+        r=r*i
+    }
+    r
+}
