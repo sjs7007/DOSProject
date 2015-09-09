@@ -12,10 +12,22 @@ class HelloActor extends Actor { //any class can become actor by inheriting from
   }
 }
 
+/* Actor with arguments */
+class HelloActor2(myName: String)extends Actor {
+  def receive = {
+    case "hello" => println("hello from %s".format(myName))
+    case _ => println("'huh?', said %s".format(myName))
+  }
+} 
+
 object Main extends App {
   val system = ActorSystem("HelloSystem") //boiler plate
   //default Actor constructor
   val helloActor = system.actorOf(Props[HelloActor],name="helloactor") //actor constructor without args  
   helloActor ! "hello" //send input to Hello Actor 
   helloActor ! "buenos dias"
+
+  val helloActor2 = system.actorOf(Props(new HelloActor2("Fred")), name="helloActor2")
+  helloActor2 ! "hello"
+  helloActor2 ! "boo"
 }
