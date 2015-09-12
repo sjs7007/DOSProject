@@ -1,4 +1,3 @@
-package remote 
 
 import akka.actor._ 
 
