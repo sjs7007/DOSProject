@@ -173,5 +173,5 @@ def fac(n: Int): Int = {
 --- 
 
 http://stackoverflow.com/questions/11667630/difference-between-using-app-trait-and-main-method-in-scala
-
+http://alvinalexander.com/scala/scala-implicit-method-arguments-fields-example
 

@@ -1,0 +1,8 @@
+[0m[[0minfo[0m] [0mSet current project to HelloRemote (in build file:/home/shinchan/DOSProject/scalaRemoteAlvin/HelloRemote/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/shinchan/DOSProject/scalaRemoteAlvin/HelloRemote/target/scala-2.10/classes...[0m
+[0m[[0minfo[0m] [0mRunning remote.HelloRemote [0m
+[INFO] [09/12/2015 12:32:52.200] [run-main-0] [Remoting] Starting remoting
+[INFO] [09/12/2015 12:32:52.437] [run-main-0] [Remoting] Remoting started; listening on addresses :[akka.tcp://HelloRemoteSystem@127.0.0.1:5150]
+[INFO] [09/12/2015 12:32:52.440] [run-main-0] [Remoting] Remoting now listens on addresses: [akka.tcp://HelloRemoteSystem@127.0.0.1:5150]
+RemoteActor received message 'The RemoteActor is alive'
+[INFO] [09/12/2015 12:32:52.458] [HelloRemoteSystem-akka.actor.default-dispatcher-4] [akka://HelloRemoteSystem/deadLetters] Message [java.lang.String] from Actor[akka://HelloRemoteSystem/user/RemoteActor#-921113030] to Actor[akka://HelloRemoteSystem/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
