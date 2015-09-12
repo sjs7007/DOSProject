@@ -5,7 +5,7 @@ case object PongMessage
 case object StartMessage 
 case object StopMessage
 
-class Ping(pong: ActorRef) extends Actor {
+class Ping(pong: ActorRef) extends Actor { //constructor with args. args is ref to pong
   var count = 0
   def incrementAndPrint { count+= 1 ; println("ping") }
   def receive = {
@@ -23,6 +23,7 @@ class Ping(pong: ActorRef) extends Actor {
         sender ! PingMessage
       }
   }
+}
 
   class Pong extends Actor {
     def receive = {
@@ -35,15 +36,16 @@ class Ping(pong: ActorRef) extends Actor {
     }
   }
 
-  object PingPongTest extends App { //http://stackoverflow.com/questions/11667630/difference-between-using-app-trait-and-main-method-in-scala
+object PingPongTest extends App { //http://stackoverflow.com/questions/11667630/difference-between-using-app-trait-and-main-method-in-scala
     val system = ActorSystem("PingPongSystem") //Actor System used to start thing. String inside can be arbitrary. 
     val pong = system.actorOf(Props[Pong], name="pong") //Props??? create an actor of type pong with name pong
-    val ping = system.actorOf(Props(new Ping(pong)), name="ping") //wut
+    val ping = system.actorOf(Props(new Ping(pong)), name="ping") //use constructor with args 
     //start them 
-    //ping ! StartMessage 
-  }
-}
+    ping ! StartMessage 
+  } 
 
-object abba extends App {
+
+/*object abba extends App {
   Console.println("Hello abba ")
-}
+  }
+}*/
