@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0mSet current project to Akka ping (in build file:/home/shinchan/DOSProject/pingPongAkka/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/shinchan/DOSProject/pingPongAkka/target/scala-2.10/classes...[0m
+[0m[[31merror[0m] [0m/home/shinchan/DOSProject/pingPongAkka/pingPong.scala:41: identifier expected but 'new' found.[0m
+[0m[[31merror[0m] [0m    val ping = system.actorOf(Props[new Ping(pong)], name="ping") //wut[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/home/shinchan/DOSProject/pingPongAkka/pingPong.scala:44: ']' expected but '}' found.[0m
+[0m[[31merror[0m] [0m  }[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0mtwo errors found[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
+[0m[[31merror[0m] [0mTotal time: 3 s, completed Sep 12, 2015 8:39:48 AM[0m

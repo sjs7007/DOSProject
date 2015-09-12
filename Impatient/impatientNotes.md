@@ -169,3 +169,9 @@ def fac(n: Int): Int = {
     else n*fac(n-1)
 }
 ```
+
+--- 
+
+http://stackoverflow.com/questions/11667630/difference-between-using-app-trait-and-main-method-in-scala
+
+
